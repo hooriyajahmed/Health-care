@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Micare</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .top-bar {
+      background-color: #f5f5f5;
+      font-size: 14px;
+      padding: 10px 0;
+    }
+
+    .top-bar a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: white;
+      padding: 10px 0;
+    }
+
+    .navbar-nav .nav-link {
+      padding: 10px 15px;
+      font-weight: 500;
+      color: #000;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #FF3F25;
+    }
+
+    .main-btn {
+      background-color: #FF3F25;
+      color: white !important;
+      padding: 10px 20px;
+      border-radius: 50px;
+      border: none;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .main-btn:hover {
+      background-color: #005c65;
+      color: white;
+    }
+
+    @media (max-width: 991px) {
+      .navbar-collapse {
+        background: #fff;
+        padding: 15px;
+      }
+    }
+
+    .banner-slide {
+      min-height: 90vh;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+    }
+
+    .why-left {
+      min-height: 500px;
+    }
+
+    .why-left img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      z-index: 1;
+    }
+
+    .why-left .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 2;
+    }
+
+    .why-left .content {
+      z-index: 3;
+    }
+
+    .why-left .features {
+      z-index: 3;
+    }
+
+    /* Cards */
+    .choose-card {
+      background: #f8f9fa;
+      border-radius: 16px;
+      padding: 30px 20px;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      height: 220px;
+      transition: all 0.3s ease;
+    }
+
+    .choose-card .number {
+      font-size: 80px;
+      font-weight: 800;
+      color: rgba(0, 0, 0, 0.08);
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .choose-card .title {
+      font-weight: 700;
+      margin-top: 120px;
+      transition: all 0.3s ease;
+    }
+
+    .choose-card .desc {
+      opacity: 0;
+      transition: all 0.3s ease;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .choose-card:hover .title {
+      margin-top: 70px;
+    }
+
+    .choose-card:hover .desc {
+      opacity: 1;
+    }
+
+    .big-card {
+      position: relative;
+      overflow: hidden;
+      height: 300px;
+    }
+
+    .big-card img {
+      height: 100%;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+
+    .big-card .overlay-text {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      color: white;
+    }
+  </style>
+</head>
+
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/images/logo.svg" alt="Logo" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Our Services</a></li>
+                <li><a class="dropdown-item" href="#">Service Details</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Doctors</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Doctors</a></li>
+                <li><a class="dropdown-item" href="#">Doctor Details</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="d-none d-lg-block">
+          <a href="#" class="main-btn">Make Appointment</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="banner">
+    <div id="micareCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="banner-slide" style="background-image: url('/images/banner1.jpg');">
+            <div class="container h-100 d-flex align-items-center">
+              <div class="text-white">
+                <h6 class="animated fadeInDown">Medical &amp; Health Center</h6>
+                <h1 class="fw-bold display-4 animated fadeInUp">Providing Excellence in Medical Care</h1>
+                <div class="mt-4">
+                  <a href="#" class="btn btn-primary rounded-pill px-4 py-2 me-3 animated fadeInLeft">Explore
+                    Department</a>
+                  <a href="#" class="btn btn-outline-light rounded-pill px-4 py-2 animated fadeInRight">Meet Our
+                    Doctors</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="banner-slide" style="background-image: url('/images/banner2');">
+            <div class="container h-100 d-flex align-items-center">
+              <div class="text-white">
+                <h6 class="animated fadeInDown">Medical &amp; Health Center</h6>
+                <h1 class="fw-bold display-4 animated fadeInUp">Providing Excellence in Medical Care</h1>
+                <div class="mt-4">
+                  <a href="#" class="btn btn-primary rounded-pill px-4 py-2 me-3 animated fadeInLeft">Explore
+                    Department</a>
+                  <a href="#" class="btn btn-outline-light rounded-pill px-4 py-2 animated fadeInRight">Meet Our
+                    Doctors</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="banner-slide" style="background-image: url('/images/banner3');">
+            <div class="container h-100 d-flex align-items-center">
+              <div class="text-white">
+                <h6 class="animated fadeInDown">Medical &amp; Health Center</h6>
+                <h1 class="fw-bold display-4 animated fadeInUp">Providing Excellence in Medical Care</h1>
+                <div class="mt-4">
+                  <a href="#" class="btn btn-primary rounded-pill px-4 py-2 me-3 animated fadeInLeft">Explore
+                    Department</a>
+                  <a href="#" class="btn btn-outline-light rounded-pill px-4 py-2 animated fadeInRight">Meet Our
+                    Doctors</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#micareCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#micareCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Content -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="fw-bold mb-3">Excellence in Healthcare<br>Compassion in Service</h2>
+          <p class="mb-0 text-muted">
+            We specialize in advanced hematology care, diagnosing and treating wide range of blood disorders and
+            diseases.
+            Our expert hematologists provide personalized treatment plans for conditions.
+          </p>
+        </div>
+
+        <!-- Right Content (Stats) -->
+        <div class="col-lg-6">
+          <div class="row g-4">
+            <div class="col-6">
+              <div class="border rounded-4 p-4 text-center">
+                <h2 class="fw-bold display-5 mb-1"><span class="counter" data-target="35">0</span>+</h2>
+                <p class="mb-0">Experienced doctors<br>at your service</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="border rounded-4 p-4 text-center">
+                <h2 class="fw-bold display-5 mb-1"><span class="counter" data-target="10">0</span>+</h2>
+                <p class="mb-0">Years Of Experience<br>in Medical Services</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Why Choose Us Section -->
+  <section class="why-choose py-5">
+    <div class="container-fluid px-4">
+      <div class="row g-4">
+
+        <!-- Left Content -->
+        <div class="col-lg-6">
+          <div class="why-left position-relative text-white rounded-4 overflow-hidden">
+            <img src="images/why-bg.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="Why Choose Us">
+            <div class="overlay"></div>
+            <div class="content position-absolute top-50 start-50 translate-middle text-center px-4">
+              <h6 class="text-danger fw-bold">Why Choose Us</h6>
+              <h2 class="fw-bold display-6 mb-4">Excellence in Healthcare, Compassion in Service</h2>
+            </div>
+            <div class="features p-4 position-absolute bottom-0 start-0 w-100">
+              <div class="row text-start">
+                <div class="col-md-6 mb-3">
+                  <div class="feature-box bg-white text-dark p-3 rounded-3 shadow-sm">
+                    <h5 class="fw-bold mb-2">Trusted Doctors</h5>
+                    <p class="mb-0 small text-muted">Highly qualified, experienced and certified healthcare
+                      professionals.</p>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="feature-box bg-white text-dark p-3 rounded-3 shadow-sm">
+                    <h5 class="fw-bold mb-2">Advanced Facilities</h5>
+                    <p class="mb-0 small text-muted">Equipped with modern technology for accurate and safe treatments.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Content -->
+        <div class="col-lg-6">
+          <div class="row g-4">
+            <!-- Top Feature Cards -->
+            <div class="col-md-6">
+              <div class="choose-card">
+                <div class="number">01</div>
+                <h5 class="title">Patient Care</h5>
+                <p class="desc">We put patients first with personalized and compassionate care.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="choose-card">
+                <div class="number">02</div>
+                <h5 class="title">Cutting-edge Tech</h5>
+                <p class="desc">Using advanced medical technology for faster and safer results.</p>
+              </div>
+            </div>
+            <!-- Large Doctor Card -->
+            <div class="col-12">
+              <div class="choose-card big-card">
+                <img src="images/doctor-smile.jpg" class="img-fluid rounded-4 w-100" alt="Doctor">
+                <div class="overlay-text">
+                  <h4 class="fw-bold">Dedicated Team</h4>
+                  <p class="small">We have a team of highly trained specialists to ensure the best treatment.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+      counter.innerText = '0';
+      const updateCounter = () => {
+        const target = +counter.getAttribute('data-target');
+        const current = +counter.innerText;
+        const increment = target / 100;
+
+        if (current < target) {
+          counter.innerText = `${Math.ceil(current + increment)}`;
+          setTimeout(updateCounter, 20);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCounter();
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

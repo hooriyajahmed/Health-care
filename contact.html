@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - MiCare</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-hero {
+            position: relative;
+            min-height: 450px;
+        }
+
+        .contact-hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+        }
+
+        .contact-hero p {
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        /* Contact Info Cards Icons */
+        .icon-box {
+            width: 60px;
+            height: 60px;
+            background-color: #d6e9ed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .icon-box i {
+            font-size: 1.8rem;
+            color: #000;
+            transition: all 0.3s ease;
+        }
+
+        .contact-info-card:hover .icon-box {
+            background-color: #ff3f25;
+        }
+
+        .contact-info-card:hover .icon-box i {
+            color: #fff;
+        }
+
+        /* Side Images in Contact Form */
+        .contact-form-section .side-img {
+            max-width: 100%;
+            border-radius: 100px;
+            object-fit: cover;
+        }
+
+        /* Contact Form Wrapper */
+        .contact-form-wrapper {
+            border: 1px solid #e0e0e0;
+            /* Light grey border */
+        }
+
+        /* Input Group (MiCare Style) */
+        .input-group {
+            border: 1px solid #ddd;
+            /* border-radius: 50px; */
+            overflow: hidden;
+            background-color: #f8f9fa;
+        }
+
+        .input-group:focus-within {
+            border-color: #000;
+            /* Black border when focused */
+        }
+
+        .input-group-text {
+            background-color: #f8f9fa;
+            border: none;
+        }
+
+        .form-control {
+            background-color: #f8f9fa;
+            border: none;
+        }
+
+        .form-control:focus {
+            box-shadow: none;
+        }
+
+        /* Checkbox */
+        .form-check-input:checked {
+            background-color: #ff3f25;
+            border-color: #ff3f25;
+        }
+
+        /* Send Button */
+        .main-btn {
+            background-color: #ff3f25;
+            color: #fff;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .main-btn:hover {
+            background-color: #e0331f;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top Banner Without Breadcrumb -->
+    <section class="contact-hero d-flex align-items-center"
+        style="background-image:url('images/topbanner.avif'); background-size:cover; background-position:center; position:relative; min-height:450px;">
+        <div class="overlay" style="position:absolute; inset:0;"></div>
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="text-white fw-bold" style="font-size:48px;">Contact Us</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Info Section -->
+    <section class="section-padding">
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="text-center mb-5">
+                <h6 class="text-danger fw-bold">Contact Us</h6>
+                <h2 class="fw-bold fs-1">
+                    Connect with Our Medical Team <br> for Personalized Care
+                </h2>
+            </div>
+
+            <!-- Contact Cards -->
+            <div class="row g-4">
+                <!-- Address Card -->
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center p-4 bg-white rounded shadow-sm h-100 contact-info-card"
+                        style="border:1px solid #e0e0e06e;">
+                        <div class="icon-box me-3">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-2">Address</h5>
+                            <p class="mb-0 text-muted">15 Washington Square New York, NY 10075, USA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contacts Card -->
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center p-4 bg-white rounded shadow-sm h-100 contact-info-card"
+                        style="border:1px solid #e0e0e06e;">
+                        <div class="icon-box me-3">
+                            <i class="bi bi-telephone-fill"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-2">Contacts</h5>
+                            <p class="mb-1 text-muted">Email : <span class="text-dark fw-bold"> support@gmail.com</span>
+                            </p>
+                            <p class="mb-0 text-muted">Phone : <span class="text-dark fw-bold">+1 (234) 568 9900</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Working Hours Card -->
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center p-4 bg-white rounded shadow-sm h-100 contact-info-card"
+                        style="border:1px solid #e0e0e06e;">
+                        <div class="icon-box me-3">
+                            <i class="bi bi-clock-fill"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-2">Working Hours</h5>
+                            <p class="mb-1 text-muted">Monday - Friday:<span class="text-dark fw-bold"> 8AM - 5PM</span>
+                            </p>
+                            <p class="mb-0 text-muted">Saturday : <span class="text-dark fw-bold">8AM - 1PM</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section py-5">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+
+                <!-- Left Image (Top Aligned) -->
+                <div class="col-lg-3 d-none d-lg-flex align-items-start">
+                    <img src="images/contact1.jpg" alt="Side Image" class="side-img">
+                </div>
+
+                <!-- Form Center -->
+                <div class="col-lg-6">
+                    <div class="p-4 bg-white rounded shadow-sm border contact-form-wrapper">
+                        <h3 class="text-center fw-bold mb-2">Send Us Message</h3>
+                        <p class="text-center text-muted mb-4">
+                            Strong communication teamwork skills enable collaboration
+                        </p>
+
+                        <form>
+                            <div class="row g-3">
+                                <!-- Name -->
+                                <div class="col-12">
+                                    <div class="input-group rounded-pill">
+                                        <span class="input-group-text bg-light border-0">
+                                            <i class="bi bi-person"></i>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Your Name">
+                                    </div>
+                                </div>
+                                <!-- Email -->
+                                <div class="col-12">
+                                    <div class="input-group rounded-pill">
+                                        <span class="input-group-text bg-light border-0">
+                                            <i class="bi bi-envelope"></i>
+                                        </span>
+                                        <input type="email" class="form-control" placeholder="Your Email">
+                                    </div>
+                                </div>
+                                <!-- Address -->
+                                <div class="col-12">
+                                    <div class="input-group rounded-pill">
+                                        <span class="input-group-text bg-light border-0">
+                                            <i class="bi bi-geo-alt"></i>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Your Address">
+                                    </div>
+                                </div>
+                                <!-- Phone -->
+                                <div class="col-12">
+                                    <div class="input-group rounded-pill">
+                                        <span class="input-group-text bg-light border-0">
+                                            <i class="bi bi-telephone"></i>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Phone Number">
+                                    </div>
+                                </div>
+                                <!-- Message -->
+                                <div class="col-12">
+                                    <div class="input-group rounded-4">
+                                        <span class="input-group-text bg-light border-0">
+                                            <i class="bi bi-chat-dots"></i>
+                                        </span>
+                                        <textarea class="form-control" rows="4" placeholder="Write Message"></textarea>
+                                    </div>
+                                </div>
+
+                                <!-- Terms Checkbox -->
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="termsCheck">
+                                        <label class="form-check-label" for="termsCheck">
+                                            I agree with company terms & condition.
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Send Button -->
+                                <div class="col-12 text-center">
+                                    <button class="main-btn px-4" type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+                <!-- Right Image (Bottom Aligned) -->
+                <div class="col-lg-3 d-none d-lg-flex align-items-end">
+                    <img src="images/contact2.jpg" alt="Side Image" class="side-img">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="500" style="border:0;"
+            allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
