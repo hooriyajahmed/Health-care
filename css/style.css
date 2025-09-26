@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-link {
+    font-weight: 500;
+    color: #1d2c38;
+    margin: 0 12px;
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #ff3f25;
+}
+
+@media (min-width: 992px) {
+    .navbar .dropdown:hover>.dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+
+    .dropdown-submenu {
+        position: relative;
+    }
+
+    .dropdown-submenu>.dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-left: 0.1rem;
+    }
+}
+
+.appointment-btn {
+    background-color: #ff3f25;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.appointment-btn:hover {
+    background-color: #005c65;
+}
+
+.dropdown-menu {
+    background: #fff;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.dropdown-menu .dropdown-item {
+    color: #1d2c38;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+    background-color: #ff3f25;
+    color: #fff;
+}
+
+@media (min-width: 992px) {
+    .navbar .dropdown:hover>.dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-submenu {
+        position: relative;
+    }
+
+    .dropdown-submenu>.dropdown-menu {
+        top: 0;
+        left: 100%;
+    }
+}
+
+.banner {
+    margin-top: 70px;
+}
+
+.banner-slide {
+    min-height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.banner-slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, rgba(240, 227, 227, 0.7), rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+
+.banner-slide .text-box {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-indicators {
+    bottom: 30px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    background-color: #FF3F25;
+    border-radius: 50%;
+    border: none;
+    margin: 0 6px;
+    opacity: 0.4;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.button {
+    background-color: #fff;
+    color: #000;
+}
+
+.button:hover {
+    background-color: #FF3F25;
+    color: #fff;
+}
+
+
+.explore-btn {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.explore-btn .icon-arrow {
+    font-size: 1rem;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    margin-top: 1px;
+}
+
+.explore-btn:hover .icon-arrow {
+    transform: translateX(6px);
+}
+
+.main-btn {
+    background-color: #FF3F25;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.main-btn:hover {
+    background-color: #fff;
+    color: #000 !important;
+}
+
+.cards {
+    line-height: 1.5;
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+.card {
+    padding: 15px;
+}
+
+.hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  color: #ff3f25;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 36px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.play-btn:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+  background: #ff3f25;
+  color: white;
+}
+
+.number-circle {
+  width: 38px;
+  height: 38px;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 38px;
+  font-weight: bold;
+  color: #333;
+  font-size: 16px;
+}
+
+.number-circle:hover {
+  border: 1px solid black;
+  transition: all 0.3s ease;
+}
+.department-card {
+  background-color: #fff;
+  border-radius: 16px;
+  min-height: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.icon-img {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.department-card h5 {
+  font-size: 20px;
+}
+
+.department-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #6c757d;
+  min-height: 60px;
+}
+
+.department-card a {
+  color: #005c65;
+  font-weight: 500;
+  margin-top: auto;
+  text-decoration: none;
+}
+
+.appointment-form .form-control,
+.appointment-form .form-select {
+  border-color: #dee2e6;
+}
+
+.appointment-form .form-control:focus,
+.appointment-form .form-select:focus {
+  box-shadow: none !important;
+}
+
+.appointment-form textarea.form-control {
+  resize: none;
+}
+
+/* Doctor Cards */
+.meet-doctors-home .doctor-card {
+  border: 1px solid #eee;
+  transition: all 0.3s ease;
+  margin: 0;
+  border-radius: 0;
+}
+
+.meet-doctors-home .doctor-img {
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.meet-doctors-home .doctor-img img {
+  border-radius: 50%;
+  transition: transform 0.4s ease;
+}
+
+.meet-doctors-home .doctor-card:hover .doctor-img img {
+  transform: scale(1.1);
+}
+
+.meet-doctors-home .btn-appointment {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 18px;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.meet-doctors-home .btn-appointment:hover {
+  color: #fff;
+  background: #FF3F25;
+  border-color: #FF3F25;
+}
+
+.meet-doctors-home .social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  color: #6c757d;
+  margin: 0 3px;
+  transition: all 0.3s ease;
+}
+
+.meet-doctors-home .social-icons a:hover {
+  background: #FF3F25;
+  color: #fff;
+  border-color: #FF3F25;
+}
+
+.choose-card {
+    background-color: #d6e9ed;
+    border-radius: 1rem;
+    height: 300px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-content {
+    padding: 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.choose-number {
+    font-size: 2rem;
+    font-weight: 700;
+    display: block;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.choose-title {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.choose-desc {
+    opacity: 0;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 60px;
+    font-size: 15px;
+}
+
+.choose-card:hover .choose-title {
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.choose-card:hover .choose-desc {
+    opacity: 1;
+}
+

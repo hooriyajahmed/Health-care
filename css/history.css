@@ -1,0 +1,63 @@
+body {
+  overflow-x: hidden;
+}
+
+
+.experience .stats-card {
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 8px;
+    max-width: 280px;
+}
+
+.experience .stats-card .inner-card {
+    border-radius: 12px;
+    text-align: left;
+}
+
+.experience .stats-card i {
+    color: #FF3F25;
+    margin-right: 3px;
+    font-size: 13px;
+}
+
+.history-section {
+    padding: 80px 0;
+    background: #f9f9f9;
+}
+
+.history-section .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.history-item {
+    padding: 20px;
+}
+
+.history-item .year {
+    background: #fff;
+    border-radius: 8px;
+}
+
+.history-item .content-box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    /* height: 300px; */
+}
+
+.history-item .content-box p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.history-section .slick-prev:before,
+.history-section .slick-next:before {
+    color: #e63946;
+    font-size: 28px;
+}

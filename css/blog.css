@@ -1,0 +1,250 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.single-blog {
+    margin-bottom: 40px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.single-blog img {
+    width: 100%;
+    height: auto;
+}
+
+.blog-details {
+    padding: 25px;
+}
+
+.blog-meta {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.blog-details h3 a {
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.blog-details h3 a:hover {
+    color: #ff3f25;
+}
+
+.btn-custom {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 20px;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #eee;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    color: #ffffff;
+    background: #FF3F25;
+    border: 1px solid #FF3F25;
+}
+
+.btn-custom .icon-arrow {
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.btn-custom:hover .icon-arrow {
+    transform: translateX(6px);
+}
+
+.single-sidebar-widget {
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+}
+
+.single-sidebar-widget h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.widget_search input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.widget_search button {
+    padding: 10px 15px;
+    background-color: #FF3F25;
+    border: none;
+    color: #ffffff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.widget_categories li,
+.widget_recent_entries li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.widget_categories ul {
+    padding-left: 15px;
+}
+
+.widget_categories ul li {
+    margin-bottom: 10px;
+}
+
+.widget_categories ul li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.widget_categories ul li a i {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.widget_categories ul li a:hover {
+    color: #FF3F25;
+}
+
+.widget_categories ul li a:hover i {
+    color: #FF3F25;
+    transform: translateX(5px);
+}
+
+.widget_recent_entries ul li {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.widget_recent_entries ul li img {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.widget_recent_entries .content a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+}
+
+.widget_recent_entries .content p {
+    font-size: 14px;
+    color: #777;
+}
+
+.widget_recent_entries .content a:hover {
+    color: #ff3f25;
+}
+
+.widget_tag_cloud .tagcloud a {
+    display: inline-block;
+    margin: 5px;
+    padding: 6px 12px;
+    background: #f5f5f5;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+.widget_tag_cloud .tagcloud a:hover {
+    background: #ff3f25;
+    color: #fff;
+}
+
+.pagination {
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.pagination li a {
+    color: #333;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    margin: 0 5px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.pagination li.active a,
+.pagination li a:hover {
+    background: #ff3f25;
+    color: #fff;
+    border-color: #ff3f25;
+}
+.cta-widget {
+  background: linear-gradient(135deg, #0072ff, #0059c9);
+  border-radius: 12px;
+  padding: 25px;
+  color: #fff;
+  position: relative;
+  height: 400px;
+}
+
+.cta-widget h6 {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.cta-widget ul li {
+  font-size: 17px;
+  margin-bottom: 50px;
+  line-height: 1.5;
+}
+
+.appointment-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ff3f25;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin-bottom: 15px; 
+}
+
+.appointment-btn .icon-arrow {
+  display: inline-block;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.appointment-btn:hover .icon-arrow {
+  transform: translateX(6px);
+}
+
+.appointment-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+

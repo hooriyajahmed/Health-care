@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.right {
+    background-color: #FF3F25;
+}
+
+.number-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: #FF3F25;
+}
+
+.number-circle:hover {
+    color: #333;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.custom-card img {
+    filter: invert(33%) sepia(94%) saturate(5149%) hue-rotate(354deg) brightness(97%) contrast(96%);
+}
+
+.number-bg {
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    font-size: 150px;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 2px rgba(0, 0, 0, 0.1);
+    z-index: 0;
+}
+
+.custom-card .card-body {
+    position: relative;
+    z-index: 1;
+}
+
+.btn-custom {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 20px;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    color: #000;
+    background: #fff;
+    border: 1px solid transparent;
+}
+
+.btn-custom .icon-arrow {
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.btn-custom:hover .icon-arrow {
+    transform: translateX(6px);
+}
+
+.bg-light-blue {
+    background: #f0f9ff;
+}
+
+.bg-light-cream {
+    background: #fff9f3;
+}
+
+.bg-light-purple {
+    background: #f4f6ff;
+}
+
+.doctors-section .team-image {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.doctors-section .team-image img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+}
+
+.doctors-section .features-row {
+    position: relative;
+    margin-top: -150px;
+    margin-bottom: 120px;
+    z-index: 2;
+    background-color: #fff;
+}
+
+.meet-doctors {
+    background-image: url(/images/background.png);
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 60px 40px;
+    margin-top: -150px;
+}
+
+.doctor-card {
+    padding: 10px;
+}
+
+.doctor-img {
+    position: relative;
+}
+
+.doctor-img img {
+    transition: transform 0.4s ease;
+}
+
+.doctor-card:hover img {
+    transform: scale(1.1);
+}
+
+.plus-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #fff;
+    color: #000;
+    font-size: 20px;
+    padding: 8px 12px;
+    border-radius: 12px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.appointment-btn .icon-arrow {
+    display: inline-block;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+    margin-top: 1px;
+}
+
+.appointment-btn:hover .icon-arrow {
+    transform: translateX(6px);
+}
+
+.appointment-btn:hover {
+    background-color: #000;
+    color: white;
+}
+
+.appointment-btn {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff3f25;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    opacity: 0;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.doctor-card:hover .appointment-btn {
+    bottom: 15px;
+    opacity: 1;
+}
+
+.doctor-card:hover .plus-icon {
+    opacity: 1;
+}
+
+.plus-icon:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.doctor-prev,
+.doctor-next {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: transparent;
+    color: rgba(255, 255, 255, 0.4);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.doctor-prev.active,
+.doctor-next.active {
+    color: #fff;
+}
+
+.doctor-prev.active:hover,
+.doctor-next.active:hover {
+    border-color: #fff;
+    color: #fff;
+}
+
+.meet-doctors .doctor-speciality {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.choose-us-section .feature-box {
+    border: 1px solid #eee;
+    border-radius: 12px;
+}
+
+.choose-us-section .feature-box .icon {
+    width: 60px;
+    height: 60px;
+    background: #eef7ff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.choose-us-section .feature-box .icon img {
+    width: 38px;
+    height: auto;
+}
+
+.choose-us-section .stats-card {
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 8px;
+    max-width: 280px;
+}
+
+.choose-us-section .stats-card .inner-card {
+    background: #fcecec;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.choose-us-section .stats-card i {
+    color: #FF3F25;
+    margin-right: 3px;
+    font-size: 13px;
+}
+
+.explore-btn {
+    background-color: #ff3f25;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.explore-btn .icon-arrow {
+    font-size: 1rem;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    margin-top: 1px;
+}
+
+.explore-btn:hover .icon-arrow {
+    transform: translateX(6px);
+}
+
+.explore-btn:hover {
+    background-color: #fff;
+    color: #000;
+}

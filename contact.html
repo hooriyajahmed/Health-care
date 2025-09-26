@@ -4,148 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - MiCare</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .contact-hero {
-            position: relative;
-            min-height: 450px;
-        }
-
-        .contact-hero h1 {
-            font-size: 48px;
-            font-weight: 700;
-        }
-
-        .contact-hero p {
-            font-size: 16px;
-            line-height: 1.7;
-        }
-
-        /* Contact Info Cards Icons */
-        .icon-box {
-            width: 60px;
-            height: 60px;
-            background-color: #d6e9ed;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 12px;
-            transition: all 0.3s ease;
-            flex-shrink: 0;
-        }
-
-        .icon-box i {
-            font-size: 1.8rem;
-            color: #000;
-            transition: all 0.3s ease;
-        }
-
-        .contact-info-card:hover .icon-box {
-            background-color: #ff3f25;
-        }
-
-        .contact-info-card:hover .icon-box i {
-            color: #fff;
-        }
-
-        /* Side Images in Contact Form */
-        .contact-form-section .side-img {
-            max-width: 100%;
-            border-radius: 100px;
-            object-fit: cover;
-        }
-
-        /* Contact Form Wrapper */
-        .contact-form-wrapper {
-            border: 1px solid #e0e0e0;
-            /* Light grey border */
-        }
-
-        /* Input Group (MiCare Style) */
-        .input-group {
-            border: 1px solid #ddd;
-            /* border-radius: 50px; */
-            overflow: hidden;
-            background-color: #f8f9fa;
-        }
-
-        .input-group:focus-within {
-            border-color: #000;
-            /* Black border when focused */
-        }
-
-        .input-group-text {
-            background-color: #f8f9fa;
-            border: none;
-        }
-
-        .form-control {
-            background-color: #f8f9fa;
-            border: none;
-        }
-
-        .form-control:focus {
-            box-shadow: none;
-        }
-
-        /* Checkbox */
-        .form-check-input:checked {
-            background-color: #ff3f25;
-            border-color: #ff3f25;
-        }
-
-        /* Send Button */
-        .main-btn {
-            background-color: #ff3f25;
-            color: #fff;
-            border: none;
-            padding: 12px 30px;
-            border-radius: 50px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-
-        .main-btn:hover {
-            background-color: #e0331f;
-        }
-    </style>
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/custom.css">
 </head>
 
 <body>
-
-    <!-- Top Banner Without Breadcrumb -->
-    <section class="contact-hero d-flex align-items-center"
-        style="background-image:url('images/topbanner.avif'); background-size:cover; background-position:center; position:relative; min-height:450px;">
-        <div class="overlay" style="position:absolute; inset:0;"></div>
-        <div class="container position-relative">
-            <div class="row">
-                <div class="col-lg-8">
-                    <h1 class="text-white fw-bold" style="font-size:48px;">Contact Us</h1>
-                </div>
+    <section class="page-banner" style="background-image: url('/images/topbanner.avif');">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="page-banner-content" data-aos="fade-up">
+                <h1>Contact Us</h1>
+                <ul class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li>Contact</li>
+                </ul>
             </div>
         </div>
     </section>
 
-
-
-    <!-- Contact Info Section -->
     <section class="section-padding">
         <div class="container">
-
-            <!-- Section Heading -->
             <div class="text-center mb-5">
                 <h6 class="text-danger fw-bold">Contact Us</h6>
                 <h2 class="fw-bold fs-1">
                     Connect with Our Medical Team <br> for Personalized Care
                 </h2>
             </div>
-
-            <!-- Contact Cards -->
             <div class="row g-4">
-                <!-- Address Card -->
                 <div class="col-md-4">
                     <div class="d-flex align-items-center p-4 bg-white rounded shadow-sm h-100 contact-info-card"
                         style="border:1px solid #e0e0e06e;">
@@ -158,8 +46,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Contacts Card -->
                 <div class="col-md-4">
                     <div class="d-flex align-items-center p-4 bg-white rounded shadow-sm h-100 contact-info-card"
                         style="border:1px solid #e0e0e06e;">
@@ -175,8 +61,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Working Hours Card -->
                 <div class="col-md-4">
                     <div class="d-flex align-items-center p-4 bg-white rounded shadow-sm h-100 contact-info-card"
                         style="border:1px solid #e0e0e06e;">
@@ -192,33 +76,23 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
-
-
-    <!-- Contact Form Section -->
-    <section class="contact-form-section py-5">
+    <section class="contact-form-section section-padding">
         <div class="container">
             <div class="row g-4 align-items-center">
-
-                <!-- Left Image (Top Aligned) -->
-                <div class="col-lg-3 d-none d-lg-flex align-items-start">
+                <div class="col-lg-3">
                     <img src="images/contact1.jpg" alt="Side Image" class="side-img">
                 </div>
-
-                <!-- Form Center -->
                 <div class="col-lg-6">
                     <div class="p-4 bg-white rounded shadow-sm border contact-form-wrapper">
                         <h3 class="text-center fw-bold mb-2">Send Us Message</h3>
                         <p class="text-center text-muted mb-4">
                             Strong communication teamwork skills enable collaboration
                         </p>
-
                         <form>
                             <div class="row g-3">
-                                <!-- Name -->
                                 <div class="col-12">
                                     <div class="input-group rounded-pill">
                                         <span class="input-group-text bg-light border-0">
@@ -227,7 +101,6 @@
                                         <input type="text" class="form-control" placeholder="Your Name">
                                     </div>
                                 </div>
-                                <!-- Email -->
                                 <div class="col-12">
                                     <div class="input-group rounded-pill">
                                         <span class="input-group-text bg-light border-0">
@@ -236,7 +109,6 @@
                                         <input type="email" class="form-control" placeholder="Your Email">
                                     </div>
                                 </div>
-                                <!-- Address -->
                                 <div class="col-12">
                                     <div class="input-group rounded-pill">
                                         <span class="input-group-text bg-light border-0">
@@ -245,7 +117,6 @@
                                         <input type="text" class="form-control" placeholder="Your Address">
                                     </div>
                                 </div>
-                                <!-- Phone -->
                                 <div class="col-12">
                                     <div class="input-group rounded-pill">
                                         <span class="input-group-text bg-light border-0">
@@ -254,7 +125,6 @@
                                         <input type="text" class="form-control" placeholder="Phone Number">
                                     </div>
                                 </div>
-                                <!-- Message -->
                                 <div class="col-12">
                                     <div class="input-group rounded-4">
                                         <span class="input-group-text bg-light border-0">
@@ -263,8 +133,6 @@
                                         <textarea class="form-control" rows="4" placeholder="Write Message"></textarea>
                                     </div>
                                 </div>
-
-                                <!-- Terms Checkbox -->
                                 <div class="col-12">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" id="termsCheck">
@@ -273,33 +141,86 @@
                                         </label>
                                     </div>
                                 </div>
-
-                                <!-- Send Button -->
                                 <div class="col-12 text-center">
-                                    <button class="main-btn px-4" type="submit">Send Message</button>
+                                    <button class="explore-btn" type="submit">Send Message<i
+                                            class="bi bi-arrow-right icon-arrow ms-2"></i></button>
                                 </div>
                             </div>
                         </form>
 
                     </div>
                 </div>
-
-                <!-- Right Image (Bottom Aligned) -->
-                <div class="col-lg-3 d-none d-lg-flex align-items-end">
+                <div class="col-lg-3">
                     <img src="images/contact2.jpg" alt="Side Image" class="side-img">
                 </div>
-
             </div>
+            <div id="formMessage" class="success-message d-none">
+                <i class="bi bi-check-circle-fill"></i>
+                Your message has been <span>sent successfully!</span>
+            </div>
+
+
         </div>
     </section>
 
-
     <section>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="500" style="border:0;"
-            allowfullscreen="" loading="lazy"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462118.02491053584!2d67.15546194999999!3d25.193202399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d4bbf%3A0x9cf92f44555a0c23!2sKarachi!5e0!3m2!1sen!2s!4v1758430721426!5m2!1sen!2s"
+            width="100%" height="500" style="border:0;align-items: center;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.addEventListener("scroll", function () {
+            const banner = document.querySelector(".page-banner");
+            let offset = window.pageYOffset;
+            banner.style.backgroundPositionY = offset * 0.5 + "px"; // parallax effect
+        });
+        const form = document.querySelector(".contact-form-wrapper form");
+        const formMessage = document.getElementById("formMessage");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const name = form.querySelector("input[placeholder='Your Name']").value.trim();
+            const email = form.querySelector("input[placeholder='Your Email']").value.trim();
+            const phone = form.querySelector("input[placeholder='Phone Number']").value.trim();
+            const message = form.querySelector("textarea").value.trim();
+            const terms = form.querySelector("#termsCheck").checked;
+
+            if (!name || !email || !phone || !message) {
+                alert("⚠️ Please fill all required fields!");
+                return;
+            }
+            if (!terms) {
+                alert("⚠️ Please agree to terms & conditions.");
+                return;
+            }
+            if (!email.includes("@")) {
+                alert("⚠️ Please enter a valid email address.");
+                return;
+            }
+
+            // Success message show karna
+            formMessage.classList.remove("d-none");
+
+            // 5 second ke baad hide karna
+            setTimeout(() => {
+                formMessage.classList.add("d-none");
+            }, 5000);
+
+
+            // Form reset karna
+            form.reset();
+
+            // Message ko 5 sec baad hide karna
+            setTimeout(() => {
+                formMessage.classList.add("d-none");
+            }, 5000);
+        });
+
+    </script>
 </body>
 
 </html>

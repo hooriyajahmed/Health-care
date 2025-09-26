@@ -2,1014 +2,772 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Micare</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/custom.css">
+
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg shadow-sm sticky-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="/images/logo.svg" alt="Logo" height="40">
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/images/logo.svg" alt="MiCare Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Our Services</a></li>
+                <li><a class="dropdown-item" href="#">Services Details</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Doctors</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Doctors</a></li>
+                <li><a class="dropdown-item" href="#">Doctor Details</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">About</a></li>
+                <li><a class="dropdown-item" href="#">History</a></li>
+                <li><a class="dropdown-item" href="#">Event Calendar</a></li>
+                <li><a class="dropdown-item" href="#">Make an Appointment</a></li>
+                <li><a class="dropdown-item" href="#">FAQ</a></li>
+                <li><a class="dropdown-item" href="#">Pricing Table</a></li>
+                <li><a class="dropdown-item" href="#">Login</a></li>
+                <li><a class="dropdown-item" href="#">Signup</a></li>
+                <li class="dropdown-submenu dropdown">
+                  <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Portfolio</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Portfolio</a></li>
+                    <li><a class="dropdown-item" href="#">Portfolio Details</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu dropdown">
+                  <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Shop</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Shop</a></li>
+                    <li><a class="dropdown-item" href="#">Shop Details</a></li>
+                    <li><a class="dropdown-item" href="#">Cart</a></li>
+                    <li><a class="dropdown-item" href="#">Checkout</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Blog Standards</a></li>
+                <li><a class="dropdown-item" href="#">Blog Details</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+          <a href="#" class="appointment-btn explore-btn">
+            Make Appointment <i class="bi bi-arrow-right ms-2 icon-arrow"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+      <div class="offcanvas-header">
+        <a class="navbar-brand" href="#">
+          <img src="/images/logo.svg" alt="MiCare Logo">
+        </a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Our Services</a></li>
+              <li><a class="dropdown-item" href="#">Services Details</a></li>
+            </ul>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Doctors</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Doctors</a></li>
+              <li><a class="dropdown-item" href="#">Doctor Details</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">About</a></li>
+              <li><a class="dropdown-item" href="#">History</a></li>
+              <li><a class="dropdown-item" href="#">Event Calendar</a></li>
+              <li><a class="dropdown-item" href="#">Make an Appointment</a></li>
+              <li><a class="dropdown-item" href="#">FAQ</a></li>
+              <li><a class="dropdown-item" href="#">Pricing Table</a></li>
+              <li><a class="dropdown-item" href="#">Login</a></li>
+              <li><a class="dropdown-item" href="#">Signup</a></li>
+              <li class="dropdown-submenu dropdown">
+                <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Portfolio</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Portfolio</a></li>
+                  <li><a class="dropdown-item" href="#">Portfolio Details</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu dropdown">
+                <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Shop</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Shop</a></li>
+                  <li><a class="dropdown-item" href="#">Shop Details</a></li>
+                  <li><a class="dropdown-item" href="#">Cart</a></li>
+                  <li><a class="dropdown-item" href="#">Checkout</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Blog Standards</a></li>
+              <li><a class="dropdown-item" href="#">Blog Details</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+        <div class="mt-3">
+          <a href="#" class="appointment-btn explore-btn">
+            Make Appointment <i class="bi bi-arrow-right ms-2 icon-arrow"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="banner">
+    <div id="micareCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#micareCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#micareCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#micareCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-item active">
+          <div class="banner-slide" style="background-image: url('/images/banner1.jpg');">
+            <div class="container h-100 d-flex align-items-center">
+              <div class="text-white text-box">
+                <h4 data-aos="fade-down" data-aos-delay="100" class="text-dark"><img src="/images/heart.png"
+                    alt="">Medical & Health Center
+                </h4>
+                <h1 class="fw-bold display-4 text-dark" data-aos="fade-up" data-aos-delay="300">
+                  Trusted Healthcare Services For Every Stage of Life</h1>
+                <div class="mt-4" data-aos="fade-up" data-aos-delay="500">
+                  <a href="#" class="main-btn rounded-pill px-4 py-2 me-3 explore-btn">
+                    <span>Explore Department</span>
+                    <i class="bi bi-arrow-right icon-arrow ms-2"></i>
+                  </a>
+                  <a href="#" class="btn button rounded-pill px-4 py-2 explore-btn"><span>Meet Our
+                      Doctors</span><i class="bi bi-arrow-right icon-arrow ms-2"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="banner-slide" style="background-image: url('/images/banner2');">
+            <div class="container h-100 d-flex align-items-center">
+              <div class="text-white text-box">
+                <h4 data-aos="fade-down" data-aos-delay="100" class="text-dark"><img src="/images/heart.png"
+                    alt="">Medical & Health Center
+                </h4>
+                <h1 class="fw-bold display-4 text-dark" data-aos="fade-up" data-aos-delay="300">
+                  Quality Medical Care for Healthier and Tomorrow</h1>
+                <div class="mt-4" data-aos="fade-up" data-aos-delay="500">
+                  <a href="#" class="main-btn rounded-pill px-4 py-2 me-3 explore-btn">
+                    <span>Explore Department</span>
+                    <i class="bi bi-arrow-right icon-arrow ms-2"></i>
+                  </a>
+                  <a href="#" class="btn button rounded-pill px-4 py-2 explore-btn"><span>Meet Our
+                      Doctors</span><i class="bi bi-arrow-right icon-arrow ms-2"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="banner-slide" style="background-image: url('/images/banner3');">
+            <div class="container h-100 d-flex align-items-center">
+              <div class="text-white text-box">
+                <h4 data-aos="fade-down" data-aos-delay="100" class="text-dark"><img src="/images/heart.png"
+                    alt="">Medical & Health Center
+                </h4>
+                <h1 class="fw-bold display-4 text-dark" data-aos="fade-up" data-aos-delay="300">
+                  Providing Excellence in Medical Care</h1>
+                <div class="mt-4" data-aos="fade-up" data-aos-delay="500">
+                  <a href="#" class="main-btn rounded-pill px-4 py-2 me-3 explore-btn">
+                    <span>Explore Department</span>
+                    <i class="bi bi-arrow-right icon-arrow ms-2"></i>
+                  </a>
+                  <a href="#" class="btn button rounded-pill px-4 py-2 explore-btn"><span>Meet Our
+                      Doctors</span><i class="bi bi-arrow-right icon-arrow ms-2"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#micareCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#micareCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="cards section-padding">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card hover-effect h-100">
+            <div class="card-body">
+              <img src="/images/stethoscope.png" class="mb-3" style="max-width: 60px; height: auto;" alt="">
+              <h4 class="fw-bold">Looking For Medical &amp; Health Care</h4>
+              <p class="text-muted">Your Health is your greatest asset and finding trusted medical and
+                health care services is essential for quality life.</p>
+              <a href="" class="explore-btn text-muted">
+                <span>Find Medical Services</span><i class="bi bi-arrow-right icon-arrow"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card hover-effect h-100">
+            <div class="card-body">
+              <img src="/images/medical-team.png" class="mb-3" style="max-width: 60px; height: auto;" alt="">
+              <h4 class="fw-bold">Find Professional &amp; Quality Doctors</h4>
+              <p class="text-muted">Finding professional, highly qualified, and experienced doctors is
+                essential for receiving the best medical treatment.</p>
+              <a href="" class="explore-btn text-muted">
+                <span>Find a Doctor</span><i class="bi bi-arrow-right icon-arrow"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card hover-effect h-100">
+            <div class="card-body">
+              <img src="/images/ambulance.png" class="mb-3" style="max-width: 60px; height: auto;" alt="">
+              <h4 class="fw-bold">Need Emergency Ambulance ?</h4>
+              <p class="text-muted">In a medical emergency, every second counts. If you need a fast,
+                reliable, and fully equipped ambulance</p>
+              <a href="" class="explore-btn text-muted">
+                <span>Find Ambulance</span><i class="bi bi-arrow-right icon-arrow"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section section-padding">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-9 mb-4">
+          <h6 class="text-danger">About micare</h6>
+          <h2 class="fw-bold">
+            We focus on patient-centered care,
+            cutting-edge medical solutions,
+            and a compassionate approach to healing.
+            With a dedication safety, excellence,
+            and innovation,
+          </h2>
+        </div>
+
+        <div class="col-lg-7 mb-4 mb-lg-0 mt-5">
+          <div class="position-relative">
+            <img src="/images/aboutm.jpg" class="img-fluid rounded shadow" style="width: 100%;" alt="About" />
+            <a href="https://www.youtube.com/watch?v=1La4QzGeaaQ" class="play-btn">
+              <i class="bi bi-play-fill"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-5 p-3">
+          <p class="text-muted mb-4">
+            We are committed to providing comprehensive, high-quality medical care tailored to your needs.
+            Whether you
+            require preventive check-ups, specialized treatments, or emergency care.
+          </p>
+
+          <div class="row mb-4">
+            <div class="col-6">
+              <div class="mb-4">
+                <div class="number-circle mb-2">1</div>
+                <h6 class="fw-bold">Compassionate Healthcare</h6>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="mb-4">
+                <div class="number-circle mb-2">2</div>
+                <h6 class="fw-bold">Advanced Medical Technology</h6>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="appointment-btn explore-btn px-4 py-2">
+            <span>Learn more us </span><i class="bi bi-arrow-right icon-arrow"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="medical-department-section section-padding" style="background-color: #d6e9ed;">
+    <div class="container">
+      <div class="text-center mb-5">
+        <p class="text-uppercase fw-semibold text-muted mb-2">Explore Medical Department</p>
+        <h2 class="fw-bold display-6">
+          Providing Excellence Across <br />
+          Medical Fields Departments for <br />
+          Specialized Healthcare
+        </h2>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="department-card text-center p-4 rounded-4 shadow-sm h-100 bg-white">
+            <span class="badge bg-light text-dark mb-2 px-3 py-1">Health</span>
+            <h5 class="fw-bold mb-3">Medicine Care</h5>
+            <img src="/images/medicine.png" alt="Medicine Icon" class="icon-img my-5" width="60" />
+            <p class="text-muted small mb-3">Top-quality medicine care for complete health and wellness.</p>
+            <a href="" class="explore-btn text-muted"><span>View Details</span><i
+                class="bi bi-arrow-right icon-arrow"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="department-card text-center p-4 rounded-4 shadow-sm h-100 bg-white">
+            <span class="badge bg-light text-dark mb-2 px-3 py-1">Dentist</span>
+            <h5 class="fw-bold mb-3">Dental Care</h5>
+            <img src="/images/dental-care.png" alt="Dental Icon" class="icon-img my-5" width="60" />
+            <p class="text-muted small mb-3">Advanced dental services for a brighter, healthier smile.</p>
+            <a href="" class="explore-btn text-muted"><span>View Details</span><i
+                class="bi bi-arrow-right icon-arrow"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="department-card text-center p-4 rounded-4 shadow-sm h-100 bg-white">
+            <span class="badge bg-light text-dark mb-2 px-3 py-1">Surgery</span>
+            <h5 class="fw-bold mb-3">Plastic Surgery</h5>
+            <img src="/images/forehead.png" alt="Surgery Icon" class="icon-img my-5" width="60" />
+            <p class="text-muted small mb-3">Reconstructive and aesthetic solutions by top surgeons.</p>
+            <a href="" class="explore-btn text-muted"><span>View Details</span><i
+                class="bi bi-arrow-right icon-arrow"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="department-card text-center p-4 rounded-4 shadow-sm h-100 bg-white">
+            <span class="badge bg-light text-dark mb-2 px-3 py-1">Neurology</span>
+            <h5 class="fw-bold mb-3">Neurology</h5>
+            <img src="/images/brain.png" alt="Neurology Icon" class="icon-img my-5" width="60" />
+            <p class="text-muted small mb-3">Expert care for brain, spinal cord, and nervous system.</p>
+            <a href="" class="explore-btn text-muted"><span>View Details</span><i
+                class="bi bi-arrow-right icon-arrow"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="department-card text-center p-4 rounded-4 shadow-sm h-100 bg-white">
+            <span class="badge bg-light text-dark mb-2 px-3 py-1">Orthopedic</span>
+            <h5 class="fw-bold mb-3">Ophthalmology</h5>
+            <img src="/images/eye.png" alt="Eye Icon" class="icon-img my-5" width="60" />
+            <p class="text-muted small mb-3">Vision care and eye treatment with precision and compassion.
+            </p>
+            <a href="" class="explore-btn text-muted"><span>View Details</span><i
+                class="bi bi-arrow-right icon-arrow"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="department-card text-center p-4 rounded-4 shadow-sm h-100 bg-white">
+            <span class="badge bg-light text-dark mb-2 px-3 py-1">Hematology</span>
+            <h5 class="fw-bold mb-3">Hematology</h5>
+            <img src="/images/phlebotomy.png" alt="Hematology Icon" class="icon-img my-5" width="60" />
+            <p class="text-muted small mb-3">Blood-related diagnostics and expert hematology care.</p>
+            <a href="" class="explore-btn text-muted"><span>View Details</span><i
+                class="bi bi-arrow-right icon-arrow"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6">
+          <div class="home-care-box text-white d-flex align-items-center rounded-4 h-100 px-1 py-5"
+            style="background-image: url('/images/doctor2.jpg'); background-size: cover; background-position: center;">
+            <div class="content ps-2 pe-4 home-care-content">
+              <p class="text-uppercase mb-1 fw-semibold">Need For Home Care</p>
+              <h3 class="fw-bold mb-3 fs-1">Medical Treatments?</h3>
+              <p class="mb-4">We are committed to delivering safe, effective,<br />and patient-centered
+                care.</p>
+              <ul class="list-unstyled mb-4">
+                <li class="mb-2"><i class="bi bi-check2-circle text-danger fs-4 me-2"></i> Advanced
+                  Medical Technology</li>
+                <li><i class="bi bi-check2-circle text-danger fs-4 me-2"></i> Specialized Treatments &
+                  Services</li>
+              </ul>
+              <a href="#" class="main-btn explore-btn"><span>Make Appointment</span><i
+                  class="bi bi-arrow-right icon-arrow"></i></a>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="appointment section-padding">
+    <div class="container">
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="fw-bold mb-3 fs-1">Excellence in Healthcare Compassion in Service</h2>
+          <p class="mb-0 text-muted">
+            We specialize in advanced hematology care, diagnosing and treating a wide range of blood
+            disorders
+            and diseases. Our expert hematologists provide personalized treatment plans for conditions.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <div class="row g-4">
+            <div class="col-6">
+              <div class="border rounded-4 p-4 text-center">
+                <h2 class="fw-bold display-5 mb-1"><span class="counter number" data-target="35">18000</span>+</h2>
+                <p class="mb-0">Experienced doctors<br>at your service</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="border rounded-4 p-4 text-center">
+                <h2 class="fw-bold display-5 mb-1"><span class="counter number" data-target="10">2000</span>+</h2>
+                <p class="mb-0">Years Of Experience<br>in Medical Services</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="position-relative rounded-4">
+        <div class="bg-image position-relative rounded-4"
+          style="background-image: url('/images/doctors.jpg');background-size: cover;background-position: top center;min-height: 500px;">
+          <a href="https://www.youtube.com/watch?v=1La4QzGeaaQ" class="play-btn">
+            <i class="bi bi-play-fill"></i></a>
+        </div>
+        <div class="appointment-form bg-white p-4 p-md-5 rounded-4 shadow mx-auto"
+          style="max-width: 1000px; margin-top: -150px; position: relative; z-index: 2; min-height: 500px;">
+          <div class="text-center mb-5">
+            <h3 class="fw-bold">Make an Appointment</h3>
+            <p class="text-muted mb-0">Booking an appointment with our healthcare professionals</p>
+          </div>
+          <form>
+            <div class="row g-3">
+              <div class="col-md-4">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-white border-end-0"><i class="bi bi-person"></i></span>
+                  <input type="text" class="form-control border-start-0" placeholder="Name">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-white border-end-0"><i class="bi bi-envelope"></i></span>
+                  <input type="email" class="form-control border-start-0" placeholder="Email Address">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-white border-end-0"><i class="bi bi-telephone"></i></span>
+                  <input type="text" class="form-control border-start-0" placeholder="Phone no">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-white border-end-0"><i class="bi bi-calendar-date"></i></span>
+                  <input type="datetime-local" class="form-control border-start-0">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-white border-end-0"><i class="bi bi-hospital"></i></span>
+                  <select class="form-select border-start-0">
+                    <option selected disabled>Department</option>
+                    <option>Cardiology</option>
+                    <option>Dental</option>
+                    <option>Neurology</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-white border-end-0"><i class="bi bi-person-badge"></i></span>
+                  <select class="form-select border-start-0">
+                    <option selected disabled>Doctors</option>
+                    <option>Dr. Smith</option>
+                    <option>Dr. Jane</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-white border-end-0"><i class="bi bi-pencil"></i></span>
+                  <textarea class="form-control border-start-0" rows="2" placeholder="Write message..."></textarea>
+                </div>
+              </div>
+              <div class="col-md-3 d-flex align-items-center">
+                <a href="#" class="appointment-btn explore-btn py-2">
+                  <span>Submit Now</span><i class="bi bi-arrow-right icon-arrow"></i>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav mx-auto gap-4">
-                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Our Services</a></li>
-                                <li><a class="dropdown-item" href="#">Service Details</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Doctors</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Doctors</a></li>
-                                <li><a class="dropdown-item" href="#">Doctor Details</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="d-none d-lg-block">
-                    <a href="#" class="main-btn explore-btn"><span>Make Appointment</span><i
-                            class="bi bi-arrow-right icon-arrow"></i></a>
-                </div>
+              </div>
             </div>
-        </nav>
-    </header>
-
-    <section class="banner">
-        <div id="micareCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#micareCarousel" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#micareCarousel" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#micareCarousel" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-item active">
-                    <div class="banner-slide" style="background-image: url('/images/banner1.jpg');">
-                        <div class="container h-100 d-flex align-items-center">
-                            <div class="text-white text-box">
-                                <h4 data-aos="fade-down" data-aos-delay="100" class="text-dark"><img
-                                        src="/images/heart.png" alt="">Medical & Health Center
-                                </h4>
-                                <h1 class="fw-bold display-4 text-dark" data-aos="fade-up" data-aos-delay="300">
-                                    Trusted Healthcare Services For Every Stage of Life</h1>
-                                <div class="mt-4" data-aos="fade-up" data-aos-delay="500">
-                                    <a href="#" class="main-btn rounded-pill px-4 py-2 me-3 explore-btn">
-                                        <span>Explore Department</span>
-                                        <i class="bi bi-arrow-right icon-arrow ms-2"></i>
-                                    </a>
-                                    <a href="#" class="btn button rounded-pill px-4 py-2 explore-btn"><span>Meet Our
-                                            Doctors</span><i class="bi bi-arrow-right icon-arrow ms-2"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="banner-slide" style="background-image: url('/images/banner2');">
-                        <div class="container h-100 d-flex align-items-center">
-                            <div class="text-white text-box">
-                                <h4 data-aos="fade-down" data-aos-delay="100" class="text-dark"><img
-                                        src="/images/heart.png" alt="">Medical & Health Center
-                                </h4>
-                                <h1 class="fw-bold display-4 text-dark" data-aos="fade-up" data-aos-delay="300">
-                                    Quality Medical Care for Healthier and Tomorrow</h1>
-                                <div class="mt-4" data-aos="fade-up" data-aos-delay="500">
-                                    <a href="#" class="main-btn rounded-pill px-4 py-2 me-3 explore-btn">
-                                        <span>Explore Department</span>
-                                        <i class="bi bi-arrow-right icon-arrow ms-2"></i>
-                                    </a>
-                                    <a href="#" class="btn button rounded-pill px-4 py-2 explore-btn"><span>Meet Our
-                                            Doctors</span><i class="bi bi-arrow-right icon-arrow ms-2"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="banner-slide" style="background-image: url('/images/banner3');">
-                        <div class="container h-100 d-flex align-items-center">
-                            <div class="text-white text-box">
-                                <h4 data-aos="fade-down" data-aos-delay="100" class="text-dark"><img
-                                        src="/images/heart.png" alt="">Medical & Health Center
-                                </h4>
-                                <h1 class="fw-bold display-4 text-dark" data-aos="fade-up" data-aos-delay="300">
-                                    Providing Excellence in Medical Care</h1>
-                                <div class="mt-4" data-aos="fade-up" data-aos-delay="500">
-                                    <a href="#" class="main-btn rounded-pill px-4 py-2 me-3 explore-btn">
-                                        <span>Explore Department</span>
-                                        <i class="bi bi-arrow-right icon-arrow ms-2"></i>
-                                    </a>
-                                    <a href="#" class="btn button rounded-pill px-4 py-2 explore-btn"><span>Meet Our
-                                            Doctors</span><i class="bi bi-arrow-right icon-arrow ms-2"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#micareCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#micareCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+          </form>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section class="cards section-padding">
-        <div class="container">
+  <section class="meet-doctors-home section-padding bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h6 class="text-danger fw-bold">Meet Our Doctors</h6>
+        <h2 class="fw-bold fs-1">Leading Medical Professionals<br> at Your Service</h2>
+      </div>
+      <div class="row g-0">
+        <div class="col-lg-3 col-md-6">
+          <div class="doctor-card   bg-white p-4 shadow-sm rounded h-100">
+            <h5 class="fw-bold mb-1">Dr. Sarah Johnson</h5>
+            <p class="text-muted mb-3">Cardiologist</p>
+            <div class="doctor-img mb-3 overflow-hidden">
+              <img src="images/aboutdoc1.jpg" class="img-fluid w-100" alt="Doctor">
+            </div>
+            <a href="#" class="btn-appointment explore-btn d-inline-block text-center">
+              Make Appointment <i class="bi bi-arrow-right icon-arrow ms-2"></i>
+            </a>
+            <div class="social-icons mt-3 text-center">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="doctor-card  bg-white p-4 shadow-sm rounded h-100">
+            <h5 class="fw-bold mb-1">Dr. Michael Lee</h5>
+            <p class="text-muted mb-3">Neurologist</p>
+            <div class="doctor-img mb-3 overflow-hidden">
+              <img src="images/aboutdoc2.jpg" class="img-fluid w-100" alt="Doctor">
+            </div>
+            <a href="#" class="btn-appointment explore-btn d-inline-block text-center">
+              Make Appointment <i class="bi bi-arrow-right icon-arrow ms-2"></i>
+            </a>
+            <div class="social-icons mt-3 text-center">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="doctor-card  bg-white p-4 shadow-sm rounded h-100">
+            <h5 class="fw-bold mb-1">Dr. Emily Brown</h5>
+            <p class="text-muted mb-3">Dermatologist</p>
+            <div class="doctor-img mb-3 ">
+              <img src="images/aboutdoc3.jpg" class="img-fluid w-100" alt="Doctor">
+            </div>
+            <a href="#" class="btn-appointment explore-btn d-inline-block text-center">
+              Make Appointment <i class="bi bi-arrow-right icon-arrow ms-2"></i>
+            </a>
+            <div class="social-icons mt-3 text-center">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="doctor-card  bg-white p-4 shadow-sm rounded h-100">
+            <h5 class="fw-bold mb-1">Dr. James Carter</h5>
+            <p class="text-muted mb-3">Orthopedic Surgeon</p>
+            <div class="doctor-img mb-3 ">
+              <img src="images/aboutdoc4.jpg" class="img-fluid w-100 " alt="Doctor">
+            </div>
+            <a href="#" class="btn-appointment explore-btn d-inline-block text-center">
+              Make Appointment <i class="bi bi-arrow-right icon-arrow ms-2"></i>
+            </a>
+            <div class="social-icons mt-3 text-center">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-choose section-padding">
+    <div class="container">
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-6">
+          <div class="d-flex flex-column h-100 justify-content-between">
+            <div class="position-relative rounded-4 overflow-hidden text-white p-5 mb-4"
+              style="background-image: url('/images/item-section-why-h1.png'); background-size: cover; background-position: center; min-height: 300px;">
+              <p class="text-uppercase fw-semibold mb-2">Why Choose Us</p>
+              <h2 class="fw-bold">Advanced Medical Care with a Human Touch</h2>
+            </div>
             <div class="row g-4">
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card hover-effect" style="height: 350px;">
-                        <div class="card-body">
-                            <img src="/images/stethoscope.png" class="mb-3" style="max-width: 60px; height: auto;"
-                                alt="">
-                            <h4 class="fw-bold">Looking For Medical &amp; Health Care</h4>
-                            <p class="text-muted">Your Health is your greatest asset and finding trusted medical and
-                                health care services
-                                is essential for quality life.</p>
-                            <a href="" class="explore-btn text-muted"><span>Find Medical Services</span><i
-                                    class="bi bi-arrow-right icon-arrow"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card hover-effect" style="height: 350px;">
-                        <div class="card-body">
-                            <img src="/images/medical-team.png" class="mb-3" style="max-width: 60px; height: auto;"
-                                alt="">
-                            <h4 class="fw-bold">Find Professional &amp; Quality Doctors</h4>
-                            <p class="text-muted">Finding professional, highly qualified, and experienced doctors is
-                                essential for
-                                receiving the best medical treatment.</p>
-                            <a href="" class="explore-btn text-muted"><span>Find a Doctor</span><i
-                                    class="bi bi-arrow-right icon-arrow"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card hover-effect" style="height: 350px;">
-                        <div class="card-body">
-                            <img src="/images/ambulance.png" class="mb-3" style="max-width: 60px; height: auto;" alt="">
-                            <h4 class="fw-bold">Need Emergency Ambulance ?</h4>
-                            <p class="text-muted">In a medical emergency, every second counts. If you need a fast,
-                                reliable, and fully equipped ambulance</p>
-                            <a href="" class="explore-btn text-muted"><span>Find Ambulance</span><i
-                                    class="bi bi-arrow-right icon-arrow"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="about-section section-padding">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-9 mb-4">
-                    <h6 class="text-danger">About micare</h6>
-                    <h2 class="fw-bold">
-                        We focus on patient-centered care,
-                        cutting-edge medical solutions,
-                        and a compassionate approach to healing.
-                        With a dedication safety, excellence,
-                        and innovation,
-                    </h2>
-                </div>
-
-                <div class="col-lg-7 mb-4 mb-lg-0 mt-5">
-                    <div class="position-relative">
-                        <img src="/images/aboutm.jpg" class="img-fluid rounded shadow" style="width: 100%;"
-                            alt="About" />
-                        <a href="https://www.youtube.com/watch?v=1La4QzGeaaQ" class="play-btn">
-                            <i class="bi bi-play-fill"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-5 p-3">
-                    <p class="text-muted mb-4">
-                        We are committed to providing comprehensive, high-quality medical care tailored to your needs.
-                        Whether you
-                        require preventive check-ups, specialized treatments, or emergency care.
+              <div class="col-sm-6">
+                <div class="choose-card position-relative text-center">
+                  <div class="card-content">
+                    <div class="number-circle mb-2">3</div>
+                    <h5 class="choose-title">Emergency and Support Services</h5>
+                    <p class="choose-desc">Team highly trained doctors, nurses healthcare patient.
                     </p>
-
-                    <div class="row mb-4">
-                        <div class="col-6">
-                            <div class="mb-4">
-                                <div class="number-circle mb-2">1</div>
-                                <h6 class="fw-bold">Compassionate Healthcare</h6>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="mb-4">
-                                <div class="number-circle mb-2">2</div>
-                                <h6 class="fw-bold">Advanced Medical Technology</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#" class="main-btn explore-btn rounded-pill px-4 py-2">
-                        <span>Learn more us </span><i class="bi bi-arrow-right icon-arrow"></i>
-                    </a>
+                  </div>
                 </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="medical-department-section py-5" style="background-color: #d6e9ed;">
-        <div class="container">
-            <div class="text-center mb-5">
-                <p class="text-uppercase fw-semibold text-muted mb-2">Explore Medical Department</p>
-                <h2 class="fw-bold display-6">
-                    Providing Excellence Across <br />
-                    Medical Fields Departments for <br />
-                    Specialized Healthcare
-                </h2>
-            </div>
-
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="department-card text-center p-4 rounded-4 shadow-sm h-100 bg-white">
-                        <span class="badge bg-light text-dark mb-2 px-3 py-1">Health</span>
-                        <h5 class="fw-bold mb-3">Medicine Care</h5>
-                        <img src="/images/medicine.png" alt="Medicine Icon" class="icon-img my-5" width="60" />
-                        <p class="text-muted small mb-3">Top-quality medicine care for complete health and wellness.</p>
-                        <a href="" class="explore-btn text-muted"><span>View Details</span><i
-                                class="bi bi-arrow-right icon-arrow"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="department-card text-center p-4 rounded-4 shadow-sm h-100 bg-white">
-                        <span class="badge bg-light text-dark mb-2 px-3 py-1">Dentist</span>
-                        <h5 class="fw-bold mb-3">Dental Care</h5>
-                        <img src="/images/dental-care.png" alt="Dental Icon" class="icon-img my-5" width="60" />
-                        <p class="text-muted small mb-3">Advanced dental services for a brighter, healthier smile.</p>
-                        <a href="" class="explore-btn text-muted"><span>View Details</span><i
-                                class="bi bi-arrow-right icon-arrow"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="department-card text-center p-4 rounded-4 shadow-sm h-100 bg-white">
-                        <span class="badge bg-light text-dark mb-2 px-3 py-1">Surgery</span>
-                        <h5 class="fw-bold mb-3">Plastic Surgery</h5>
-                        <img src="/images/forehead.png" alt="Surgery Icon" class="icon-img my-5" width="60" />
-                        <p class="text-muted small mb-3">Reconstructive and aesthetic solutions by top surgeons.</p>
-                        <a href="" class="explore-btn text-muted"><span>View Details</span><i
-                                class="bi bi-arrow-right icon-arrow"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="department-card text-center p-4 rounded-4 shadow-sm h-100 bg-white">
-                        <span class="badge bg-light text-dark mb-2 px-3 py-1">Neurology</span>
-                        <h5 class="fw-bold mb-3">Neurology</h5>
-                        <img src="/images/brain.png" alt="Neurology Icon" class="icon-img my-5" width="60" />
-                        <p class="text-muted small mb-3">Expert care for brain, spinal cord, and nervous system.</p>
-                        <a href="" class="explore-btn text-muted"><span>View Details</span><i
-                                class="bi bi-arrow-right icon-arrow"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="department-card text-center p-4 rounded-4 shadow-sm h-100 bg-white">
-                        <span class="badge bg-light text-dark mb-2 px-3 py-1">Orthopedic</span>
-                        <h5 class="fw-bold mb-3">Ophthalmology</h5>
-                        <img src="/images/eye.png" alt="Eye Icon" class="icon-img my-5" width="60" />
-                        <p class="text-muted small mb-3">Vision care and eye treatment with precision and compassion.
-                        </p>
-                        <a href="" class="explore-btn text-muted"><span>View Details</span><i
-                                class="bi bi-arrow-right icon-arrow"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="department-card text-center p-4 rounded-4 shadow-sm h-100 bg-white">
-                        <span class="badge bg-light text-dark mb-2 px-3 py-1">Hematology</span>
-                        <h5 class="fw-bold mb-3">Hematology</h5>
-                        <img src="/images/phlebotomy.png" alt="Hematology Icon" class="icon-img my-5" width="60" />
-                        <p class="text-muted small mb-3">Blood-related diagnostics and expert hematology care.</p>
-                        <a href="" class="explore-btn text-muted"><span>View Details</span><i
-                                class="bi bi-arrow-right icon-arrow"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-6">
-                    <div class="home-care-box text-white d-flex align-items-center rounded-4 h-100 px-1 py-5"
-                        style="background-image: url('/images/doctor2.jpg'); background-size: cover; background-position: center;">
-                        <div class="content ps-2 pe-4 home-care-content">
-                            <p class="text-uppercase mb-1 fw-semibold">Need For Home Care</p>
-                            <h3 class="fw-bold mb-3 fs-1">Medical Treatments?</h3>
-                            <p class="mb-4">We are committed to delivering safe, effective,<br />and patient-centered
-                                care.</p>
-                            <ul class="list-unstyled mb-4">
-                                <li class="mb-2"><i class="bi bi-check2-circle text-danger fs-4 me-2"></i> Advanced
-                                    Medical Technology</li>
-                                <li><i class="bi bi-check2-circle text-danger fs-4 me-2"></i> Specialized Treatments &
-                                    Services</li>
-                            </ul>
-                            <a href="#" class="main-btn explore-btn"><span>Make Appointment</span><i
-                                    class="bi bi-arrow-right icon-arrow"></i></a>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="appointment section-padding mb-5">
-        <div class="container">
-            <div class="row align-items-center mb-5">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <h2 class="fw-bold mb-3 fs-1">Excellence in Healthcare Compassion in Service</h2>
-                    <p class="mb-0 text-muted">
-                        We specialize in advanced hematology care, diagnosing and treating a wide range of blood
-                        disorders
-                        and diseases. Our expert hematologists provide personalized treatment plans for conditions.
+              </div>
+              <div class="col-sm-6">
+                <div class="choose-card position-relative text-center">
+                  <div class="card-content">
+                    <div class="number-circle mb-2">4</div>
+                    <h5 class="choose-title">Patient-Centered<br> Approach</h5>
+                    <p class="choose-desc">Team highly trained doctors, nurses healthcare patient.
                     </p>
+                  </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="row g-4">
-                        <div class="col-6">
-                            <div class="border rounded-4 p-4 text-center">
-                                <h2 class="fw-bold display-5 mb-1"><span class="counter" data-target="35">0</span>+</h2>
-                                <p class="mb-0">Experienced doctors<br>at your service</p>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="border rounded-4 p-4 text-center">
-                                <h2 class="fw-bold display-5 mb-1"><span class="counter" data-target="10">0</span>+</h2>
-                                <p class="mb-0">Years Of Experience<br>in Medical Services</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-            <div class="position-relative rounded-4">
-                <div class="bg-image position-relative rounded-4"
-                    style="background-image: url('/images/doctors.jpg');background-size: cover;background-position: top center;min-height: 500px;">
-                    <a href="https://www.youtube.com/watch?v=1La4QzGeaaQ" class="play-btn">
-                        <i class="bi bi-play-fill"></i></a>
-                </div>
-                <div class="appointment-form bg-white p-4 p-md-5 rounded-4 shadow mx-auto"
-                    style="max-width: 1000px; margin-top: -150px; position: relative; z-index: 2; min-height: 500px;">
-                    <div class="text-center mb-5">
-                        <h3 class="fw-bold">Make an Appointment</h3>
-                        <p class="text-muted mb-0">Booking an appointment with our healthcare professionals</p>
-                    </div>
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-md-4">
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text bg-white border-end-0"><i
-                                            class="bi bi-person"></i></span>
-                                    <input type="text" class="form-control border-start-0" placeholder="Name">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text bg-white border-end-0"><i
-                                            class="bi bi-envelope"></i></span>
-                                    <input type="email" class="form-control border-start-0" placeholder="Email Address">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text bg-white border-end-0"><i
-                                            class="bi bi-telephone"></i></span>
-                                    <input type="text" class="form-control border-start-0" placeholder="Phone no">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text bg-white border-end-0"><i
-                                            class="bi bi-calendar-date"></i></span>
-                                    <input type="datetime-local" class="form-control border-start-0">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text bg-white border-end-0"><i
-                                            class="bi bi-hospital"></i></span>
-                                    <select class="form-select border-start-0">
-                                        <option selected disabled>Department</option>
-                                        <option>Cardiology</option>
-                                        <option>Dental</option>
-                                        <option>Neurology</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text bg-white border-end-0"><i
-                                            class="bi bi-person-badge"></i></span>
-                                    <select class="form-select border-start-0">
-                                        <option selected disabled>Doctors</option>
-                                        <option>Dr. Smith</option>
-                                        <option>Dr. Jane</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-9">
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text bg-white border-end-0"><i
-                                            class="bi bi-pencil"></i></span>
-                                    <textarea class="form-control border-start-0" rows="2"
-                                        placeholder="Write message..."></textarea>
-                                </div>
-                            </div>
-                            <div class="col-md-3 d-flex align-items-center">
-                                <a href="#" class="main-btn explore-btn">
-                                    <span>Submit Now</span><i class="bi bi-arrow-right icon-arrow"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
-
-    <section class="meet-doctors-home py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h6 class="text-danger fw-bold">Meet Our Doctors</h6>
-                <h2 class="fw-bold fs-1">Leading Medical Professionals<br> at Your Service</h2>
+        <div class="col-lg-6 d-flex flex-column justify-content-between">
+          <div class="row g-4 mb-4">
+            <div class="col-sm-6">
+              <div class="choose-card position-relative text-center">
+                <div class="card-content">
+                  <div class="number-circle mb-2">1</div>
+                  <h5 class="choose-title">Experienced and Compassionate Care</h5>
+                  <p class="choose-desc">Team highly trained doctors, nurses healthcare patient.</p>
+                </div>
+              </div>
             </div>
-
-            <div class="row g-0">
-                <div class="col-lg-3 col-md-6">
-                    <div class="doctor-card   bg-white p-4 shadow-sm rounded h-100">
-                        <h5 class="fw-bold mb-1">Dr. Sarah Johnson</h5>
-                        <p class="text-muted mb-3">Cardiologist</p>
-                        <div class="doctor-img mb-3 overflow-hidden">
-                            <img src="images/aboutdoc1.jpg" class="img-fluid w-100" alt="Doctor">
-                        </div>
-                        <a href="#" class="appointment-btn explore-btn d-inline-block">
-                            Make Appointment <i class="bi bi-arrow-right icon-arrow ms-2"></i>
-                        </a>
-                        <div class="social-icons mt-3 text-center">
-                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        </div>
-                    </div>
+            <div class="col-sm-6">
+              <div class="choose-card position-relative text-center">
+                <div class="card-content">
+                  <div class="number-circle mb-2">2</div>
+                  <h5 class="choose-title">Advanced Medical Technology</h5>
+                  <p class="choose-desc">Team highly trained doctors, nurses healthcare patient.</p>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="doctor-card  bg-white p-4 shadow-sm rounded h-100">
-                        <h5 class="fw-bold mb-1">Dr. Michael Lee</h5>
-                        <p class="text-muted mb-3">Neurologist</p>
-                        <div class="doctor-img mb-3 overflow-hidden">
-                            <img src="images/aboutdoc2.jpg" class="img-fluid w-100" alt="Doctor">
-                        </div>
-                        <a href="#" class="appointment-btn explore-btn d-inline-block">
-                            Make Appointment <i class="bi bi-arrow-right icon-arrow ms-2"></i>
-                        </a>
-                        <div class="social-icons mt-3 text-center">
-                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="doctor-card  bg-white p-4 shadow-sm rounded h-100">
-                        <h5 class="fw-bold mb-1">Dr. Emily Brown</h5>
-                        <p class="text-muted mb-3">Dermatologist</p>
-                        <div class="doctor-img mb-3 ">
-                            <img src="images/aboutdoc3.jpg" class="img-fluid w-100" alt="Doctor">
-                        </div>
-                        <a href="#" class="appointment-btn explore-btn d-inline-block">
-                            Make Appointment <i class="bi bi-arrow-right icon-arrow ms-2"></i>
-                        </a>
-                        <div class="social-icons mt-3 text-center">
-                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="doctor-card  bg-white p-4 shadow-sm rounded h-100">
-                        <h5 class="fw-bold mb-1">Dr. James Carter</h5>
-                        <p class="text-muted mb-3">Orthopedic Surgeon</p>
-                        <div class="doctor-img mb-3 ">
-                            <img src="images/aboutdoc4.jpg" class="img-fluid w-100 " alt="Doctor">
-                        </div>
-                        <a href="#" class="appointment-btn explore-btn d-inline-block ">
-                            Make Appointment <i class="bi bi-arrow-right icon-arrow ms-2"></i>
-                        </a>
-                        <div class="social-icons mt-3 text-center">
-                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
+          <div class="position-relative rounded-4 overflow-hidden" style="min-height: 300px;">
+            <img src="/images/banner1.jpg" alt="Doctor" class="w-100 h-100 object-fit-cover rounded-4">
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section class="why-choose section-padding">
-        <div class="container">
-            <div class="row g-4 align-items-stretch">
-                <!-- Left Content -->
-                <div class="col-lg-6">
-                    <div class="d-flex flex-column h-100 justify-content-between">
-                        <!-- Background Block -->
-                        <div class="position-relative rounded-4 overflow-hidden text-white p-5 mb-4"
-                            style="background-image: url('/images/item-section-why-h1.png'); background-size: cover; background-position: center; min-height: 300px;">
-                            <p class="text-uppercase fw-semibold mb-2">Why Choose Us</p>
-                            <h2 class="fw-bold">Advanced Medical Care with a Human Touch</h2>
-                        </div>
-
-                        <!-- Two cards below the image -->
-                        <div class="row g-4">
-                            <div class="col-sm-6">
-                                <div class="choose-card position-relative text-center">
-                                    <div class="card-content">
-                                        <div class="number-circle mb-2">3</div>
-                                        <h5 class="choose-title">35+ Years of Experience</h5>
-                                        <p class="choose-desc">Serving with dedication & excellence in medical care.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="choose-card position-relative text-center">
-                                    <div class="card-content">
-                                        <div class="number-circle mb-2">4</div>
-                                        <h5 class="choose-title">Compassionate Care</h5>
-                                        <p class="choose-desc">We prioritize your health & comfort at every step.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Content -->
-                <div class="col-lg-6 d-flex flex-column justify-content-between">
-                    <div class="row g-4 mb-4">
-                        <div class="col-sm-6">
-                            <div class="choose-card position-relative text-center">
-                                <div class="card-content">
-                                    <div class="number-circle mb-2">1</div>
-                                    <h5 class="choose-title">Latest Equipment</h5>
-                                    <p class="choose-desc">Equipped with cutting-edge medical technologies.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="choose-card position-relative text-center">
-                                <div class="card-content">
-                                    <div class="number-circle mb-2">2</div>
-                                    <h5 class="choose-title">24/7 Support</h5>
-                                    <p class="choose-desc">Always available for emergencies and consultations.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Doctor image -->
-                    <div class="position-relative rounded-4 overflow-hidden" style="min-height: 300px;">
-                        <img src="/images/banner1.jpg" alt="Doctor" class="w-100 h-100 object-fit-cover rounded-4">
-                    </div>
-                </div>
-            </div>
+  <section class="lab-testing-section position-relative section-padding">
+    <div class="position-absolute top-0 start-0 w-100 h-100 z-0"
+      style="background-image: url('/images/img-section-lab-h1.jpg');background-size: cover;background-position: center;background-repeat: no-repeat;">
+    </div>
+    <div class="container position-relative z-1">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0 position-relative d-flex align-items-center justify-content-center"
+          style="min-height: 400px;">
+          <div class=" text-white rounded-4 p-4 position-absolute"
+            style="top: 30px; left: 30px; background-color: #ff3f25">
+            <div class="fs-1 fw-bold mb-1">25+ <img src="/images/logo-box-year-ex.svg" alt=""></div>
+            <div class="fw-semibold">Years Of Experience</div>
+          </div>
         </div>
-    </section>
+        <div class="col-lg-6">
+          <div class="bg-white shadow rounded-4 p-4 p-lg-5">
+            <div class="text-center mb-4">
+              <img src="/images/item-section-lap-h1-1.png" class="img-fluid" style="max-height: 100px;" alt="Doctors">
+            </div>
+            <div class="mb-4">
+              <h5 class="fw-bold">Specialized Healthcare</h5>
+              <p class="text-muted mb-0">Medical care services offer a wide range of treatments, from
+                routine check-ups to specialized care in cardiology.</p>
+            </div>
 
-    <section class="lab-testing-section position-relative section-padding">
+            <div class="mb-4">
+              <h5 class="fw-bold">24/7 Emergency & Critical Care</h5>
+              <p class="text-muted mb-0">Timely medical attention can save lives, which is why top-tier
+                medical care services provide round-the-clock emergency care.</p>
+            </div>
 
-        <div class="position-absolute top-0 start-0 w-100 h-100 z-0"
-            style="background-image: url('/images/img-section-lab-h1.jpg');background-size: cover;background-position: center;background-repeat: no-repeat;">
+            <div>
+              <h5 class="fw-bold">Patient-Centered Services</h5>
+              <p class="text-muted mb-0">Healthcare today is more accessible than ever — easy appointment
+                scheduling, telemedicine consultations, and home care services.</p>
+            </div>
+          </div>
         </div>
-        <div class="container position-relative z-1">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0 position-relative d-flex align-items-center justify-content-center"
-                    style="min-height: 400px;">
-                    <div class=" text-white rounded-4 p-4 position-absolute"
-                        style="top: 30px; left: 30px; background-color: #ff3f25">
-                        <div class="fs-1 fw-bold mb-1">25+ <img src="/images/logo-box-year-ex.svg" alt=""></div>
-                        <div class="fw-semibold">Years Of Experience</div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="bg-white shadow rounded-4 p-4 p-lg-5">
-                        <div class="text-center mb-4">
-                            <img src="/images/item-section-lap-h1-1.png" class="img-fluid" style="max-height: 100px;"
-                                alt="Doctors">
-                        </div>
-                        <div class="mb-4">
-                            <h5 class="fw-bold">Specialized Healthcare</h5>
-                            <p class="text-muted mb-0">Medical care services offer a wide range of treatments, from
-                                routine check-ups to specialized care in cardiology.</p>
-                        </div>
 
-                        <div class="mb-4">
-                            <h5 class="fw-bold">24/7 Emergency & Critical Care</h5>
-                            <p class="text-muted mb-0">Timely medical attention can save lives, which is why top-tier
-                                medical care services provide round-the-clock emergency care.</p>
-                        </div>
+      </div>
+    </div>
+  </section>
 
-                        <div>
-                            <h5 class="fw-bold">Patient-Centered Services</h5>
-                            <p class="text-muted mb-0">Healthcare today is more accessible than ever — easy appointment
-                                scheduling, telemedicine consultations, and home care services.</p>
-                        </div>
-                    </div>
-                </div>
+  <section class="marquee section-padding">
+    <div class="container">
+      <div class="row">
+        <marquee>
+          <img src="https://micare.vercel.app/image/brand/brand-5.png" alt="" class="ms-5">
+          <img src="https://micare.vercel.app/image/brand/brand-6.png" alt="" class="ms-5">
+          <img src="https://micare.vercel.app/image/brand/brand-1.png" alt="" class="ms-5">
+          <img src="https://micare.vercel.app/image/brand/brand-2.png" alt="" class="ms-5">
+          <img src="https://micare.vercel.app/image/brand/brand-3.png" alt="" class="ms-5">
+          <img src="https://micare.vercel.app/image/brand/brand-4.png" alt="" class="ms-5">
+          <img src="https://micare.vercel.app/image/brand/brand-5.png" alt="" class="ms-5">
+          <img src="https://micare.vercel.app/image/brand/brand-6.png" alt="" class="ms-5">
+          <img src="https://micare.vercel.app/image/brand/brand-1.png" alt="" class="ms-5">
+          <img src="https://micare.vercel.app/image/brand/brand-2.png" alt="" class="ms-5">
+        </marquee>
+      </div>
+    </div>
+  </section>
 
-            </div>
-        </div>
-    </section>
-
-    <section class="section-padding testimonial-section">
-        <div class="container">
-
-            <div class="text-center mb-5">
-                <span class="text-uppercase text-danger fw-semibold">Our Testimonial</span>
-                <h2 class="fw-bold mt-2 mb-4">Your Health, Our Commitment<br> Hear from Our Patients</h2>
-            </div>
-            <div class="row ">
-                <div class="col-lg-5 mb-4 mb-lg-0 d-flex">
-                    <div class="bg-image position-relative rounded-4 h-100 w-100"
-                        style="background-image: url('images/testimonial-video.jpg');background-size: cover; min-height: 500px;">
-
-                        <div class="bottom-content">
-                            <a href="https://www.youtube.com/watch?v=1La4QzGeaaQ" class="play-btn">
-                                <i class="bi bi-play-fill"></i>
-                            </a>
-                            <div class="patient-info text-light">Bill M. Ramirez, Managing Director</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-7 d-flex">
-                    <div class="testimonial-slider w-100">
-                        <div class="testimonial-card  rounded-4 shadow-sm p-4 h-100" style="background-color: #d6e9ed;">
-                            <div class="text-warning mb-3">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <h4 class="fw-bold mb-3">"Exceptional Care and Compassion"</h4>
-                            <p class="mb-5 mt-5 text-muted">
-                                “The doctors and nurses at provided me with outstanding care. From the moment walked
-                                care expertise and kindness."
-                            </p>
-                            <div class="mb-4"><img src="images/chat.png" width="60" height="60" alt="Patient"></div>
-                            <div class="d-flex align-items-center mt-auto">
-                                <h6 class="mb-0 fw-bold">Nicolas M. Baldwin,</h6>
-                                <small class="text-muted">Businessman</small>
-                            </div>
-                        </div>
-                        <div class="testimonial-card  rounded-4 shadow-sm p-4 h-100" style="background-color: #d6e9ed;">
-                            <div class="text-warning mb-3">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <h4 class="fw-bold mb-3">"Exceptional Care and Compassion"</h4>
-                            <p class="mb-5 mt-5 text-muted">
-                                “The doctors and nurses at provided me with outstanding care. From the moment walked
-                                care expertise and kindness."
-                            </p>
-                            <div class="mb-4"><img src="images/chat.png" width="60" height="60" alt="Patient"></div>
-                            <div class="d-flex align-items-center mt-auto">
-                                <h6 class="mb-0 fw-bold">Nicolas M. Baldwin,</h6>
-                                <small class="text-muted">Businessman</small>
-                            </div>
-                        </div>
-                        <div class="testimonial-card  rounded-4 shadow-sm p-4 h-100" style="background-color: #d6e9ed;">
-                            <div class="text-warning mb-3">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <h4 class="fw-bold mb-3">"Exceptional Care and Compassion"</h4>
-                            <p class="mb-5 mt-5 text-muted">
-                                “The doctors and nurses at provided me with outstanding care. From the moment walked
-                                care expertise and kindness."
-                            </p>
-                            <div class="mb-4"><img src="images/chat.png" width="60" height="60" alt="Patient"></div>
-                            <div class="d-flex align-items-center mt-auto">
-                                <h6 class="mb-0 fw-bold">Nicolas M. Baldwin,</h6>
-                                <small class="text-muted">Businessman</small>
-                            </div>
-                        </div>
-                        <div class="testimonial-card  rounded-4 shadow-sm p-4 h-100" style="background-color: #d6e9ed;">
-                            <div class="text-warning mb-3">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <h4 class="fw-bold mb-3">"Exceptional Care and Compassion"</h4>
-                            <p class="mb-5 mt-5 text-muted">
-                                “The doctors and nurses at provided me with outstanding care. From the moment walked
-                                care expertise and kindness."
-                            </p>
-                            <div class="mb-4"><img src="images/chat.png" width="60" height="60" alt="Patient"></div>
-                            <div class="d-flex align-items-center mt-auto">
-                                <h6 class="mb-0 fw-bold">Nicolas M. Baldwin,</h6>
-                                <small class="text-muted">Businessman</small>
-                            </div>
-                        </div>
-                        <div class="testimonial-card  rounded-4 shadow-sm p-4 h-100" style="background-color: #d6e9ed;">
-                            <div class="text-warning mb-3">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <h4 class="fw-bold mb-3">"Exceptional Care and Compassion"</h4>
-                            <p class="mb-5 mt-5 text-muted">
-                                “The doctors and nurses at provided me with outstanding care. From the moment walked
-                                care expertise and kindness."
-                            </p>
-                            <div class="mb-4"><img src="images/chat.png" width="60" height="60" alt="Patient"></div>
-                            <div class="d-flex align-items-center mt-auto">
-                                <h6 class="mb-0 fw-bold">Nicolas M. Baldwin,</h6>
-                                <small class="text-muted">Businessman</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="appointment-section py-5" style="background-color: #0561C4;">
-        <div class="container">
-            <div class="row align-items-center">
-
-                <!-- Left Content -->
-                <div class="col-lg-8 mb-4 mb-lg-0">
-                    <div class="appointment-text text-light">
-                        <h6 class="fw-semibold">Make an Appointment</h6>
-                        <h1 class="fw-bold mb-4">
-                            Looking for professionals &<br>
-                            trusted medical healthcare?<br>
-                            you're in the right place.
-                        </h1>
-
-                        <div class="row mb-4">
-                            <div class="col-md-6">
-                                <p class="mb-2">
-                                    <i class="bi bi-check2-circle text-danger fs-4 me-2"></i>
-                                    Advanced Medical Technology
-                                </p>
-                            </div>
-                            <div class="col-md-6">
-                                <p class="mb-2">
-                                    <i class="bi bi-check2-circle text-danger fs-4 me-2"></i>
-                                    Specialized Treatments & Services
-                                </p>
-                            </div>
-                        </div>
-
-                        <a href="#" class="explore-btn main-btn ">
-                            Make Appointment <i class="bi bi-arrow-right ms-2 icon-arrow"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Right Image -->
-                <div class="col-lg-4 text-center">
-                    <img src="/images/banner-item.png" alt="Doctor Nurse" class="img-fluid">
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- <section class="blog-news py-5">
-        <div class="container">
-
-            <div class="row mb-4">
-                <div class="col-lg-12 text-center">
-                    <h5 class="text-primary fw-bold">Blog & News</h5>
-                    <h2 class="fw-bold">Our Latest Updates</h2>
-                </div>
-            </div>
-
-            <div class="row g-4">
-                <div class="col-lg-6">
-                    <div class="blog-card position-relative rounded-4 overflow-hidden h-100">
-                        <img src="images/blog1.jpg" alt="Blog 1" class="img-fluid w-100 h-100 object-fit-cover">
-                        <div class="blog-overlay position-absolute bottom-0 w-100 p-4 text-white">
-                            <span class="badge bg-danger mb-2">Medical</span>
-                            <h4 class="fw-bold">We Provide Best Medical Services</h4>
-                            <p class="mb-0">August 10, 2025 | By Admin</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="row g-4">
-
-                        <div class="col-md-6">
-                            <div class="blog-small d-flex rounded-4 overflow-hidden">
-                                <img src="images/blog2.jpg" alt="Blog 2" class="img-fluid"
-                                    style="width: 100px; height: 100px; object-fit: cover;">
-                                <div class="p-3">
-                                    <h6 class="fw-bold mb-1">Expert Health Tips</h6>
-                                    <small class="text-muted">Aug 8, 2025</small>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="blog-small d-flex rounded-4 overflow-hidden">
-                                <img src="images/blog3.jpg" alt="Blog 3" class="img-fluid"
-                                    style="width: 100px; height: 100px; object-fit: cover;">
-                                <div class="p-3">
-                                    <h6 class="fw-bold mb-1">Your Guide to Good Health</h6>
-                                    <small class="text-muted">Aug 6, 2025</small>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="blog-small d-flex rounded-4 overflow-hidden">
-                                <img src="images/blog4.jpg" alt="Blog 4" class="img-fluid"
-                                    style="width: 100px; height: 100px; object-fit: cover;">
-                                <div class="p-3">
-                                    <h6 class="fw-bold mb-1">Top Medical Innovations</h6>
-                                    <small class="text-muted">Aug 4, 2025</small>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="blog-small d-flex rounded-4 overflow-hidden">
-                                <img src="images/blog5.jpg" alt="Blog 5" class="img-fluid"
-                                    style="width: 100px; height: 100px; object-fit: cover;">
-                                <div class="p-3">
-                                    <h6 class="fw-bold mb-1">Wellness & Care</h6>
-                                    <small class="text-muted">Aug 2, 2025</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <section class="feature section-padding">
-        <div class="container">
-            <div class="row text-center mb-5">
-                <div class="col-lg-8 mx-auto">
-                    <h6 class="text-danger mb-2">Why Choose Us</h6>
-                    <h2 class="fw-bold">Quality Medical Care with Compassion</h2>
-                </div>
-            </div>
-
-            <div class="row g-4">
-                <div class="col-lg-4">
-                    <div class="feature-card p-4 text-center">
-                        <img src="/images/stethoscope.png" class="mb-3" width="60" alt="Icon">
-                        <h5 class="fw-bold">Expert Doctors</h5>
-                        <p class="text-muted">Highly qualified and experienced medical professionals dedicated to your
-                            well-being.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="feature-card p-4 text-center">
-                        <img src="/images/medical-team.png" class="mb-3" width="60" alt="Icon">
-                        <h5 class="fw-bold">24/7 Emergency</h5>
-                        <p class="text-muted">Always ready to serve in critical situations with quick and reliable
-                            emergency response.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="feature-card p-4 text-center">
-                        <img src="/images/ambulance.png" class="mb-3" width="60" alt="Icon">
-                        <h5 class="fw-bold">Modern Equipment</h5>
-                        <p class="text-muted">Equipped with cutting-edge tools and diagnostic machines for accurate
-                            treatments.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.lab-slider').slick({
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                arrows: true,
-                prevArrow: $('.lab-prev'),
-                nextArrow: $('.lab-next'),
-                autoplay: true,
-                autoplaySpeed: 3000,
-                responsive: [
-                    {
-                        breakpoint: 992,
-                        settings: { slidesToShow: 2 }
-                    },
-                    {
-                        breakpoint: 576,
-                        settings: { slidesToShow: 1 }
-                    }
-                ]
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-            $('.testimonial-slider').slick({
-                infinite: false,
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                swipeToSlide: true,
-                responsive: [
-                    {
-                        breakpoint: 992,
-                        settings: {
-                            slidesToShow: 1
-                        }
-                    }
-                ]
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-            $('.doctor-slider').slick({
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                dots: false,
-                arrows: true,
-                autoplay: false,
-                responsive: [
-                    {
-                        breakpoint: 992, // tablet
-                        settings: {
-                            slidesToShow: 2
-                        }
-                    },
-                    {
-                        breakpoint: 576, // mobile
-                        settings: {
-                            slidesToShow: 1
-                        }
-                    }
-                ]
-            });
-        });
-    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".counter").counterUp({ delay: 10, time: 1000 });
+    });   
+  </script>
 
 </body>
 
